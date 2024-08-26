@@ -11,9 +11,16 @@ config_version=5
 [application]
 
 config/name="oryx"
-run/main_scene="res://scenes/main.tscn"
+run/main_scene="res://scenes/test_level.tscn"
 config/features=PackedStringArray("4.3", "Mobile")
 config/icon="res://resources/images/icon.svg"
+
+[display]
+
+window/size/viewport_width=320
+window/size/viewport_height=180
+window/stretch/mode="viewport"
+window/stretch/scale_mode="integer"
 
 [rendering]
 

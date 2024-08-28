@@ -23,7 +23,10 @@ func FindPath(fromPos : Vector2i, toPos : Vector2i) -> Array[Vector2i]:
 	return returnArray
 	
 func GetHexPosAtGlobalPosition(globalPosition : Vector2) -> Vector2i:
-	return local_to_map(to_local(globalPosition))
+	var hexPos : Vector2i = local_to_map(to_local(globalPosition))
+	if get_cell_source_id(hexPos) == -1:
+		hexPos = Vector2i(-1, -1)
+	return hexPos
 	
 func GetGlobalPositionAtHexPos(hexPos : Vector2i) -> Vector2:
 	return to_global(map_to_local(hexPos))

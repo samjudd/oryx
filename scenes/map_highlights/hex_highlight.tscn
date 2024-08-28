@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://b4jdpi7q4eegp"]
+
+[ext_resource type="Texture2D" uid="uid://dhn1jyws3sia5" path="res://resources/textures/hex_highlight.png" id="1_bsrdv"]
+
+[node name="HexHighlight" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_bsrdv")

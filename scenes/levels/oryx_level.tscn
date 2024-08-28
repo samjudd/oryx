@@ -10,6 +10,5 @@ script = ExtResource("1_jid7e")
 [node name="Camera2D" type="Camera2D" parent="."]
 
 [node name="BaseLayer" type="TileMapLayer" parent="."]
-unique_name_in_owner = true
 tile_set = ExtResource("2_fcxfd")
 script = ExtResource("3_6rxf0")
